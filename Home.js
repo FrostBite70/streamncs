@@ -7,22 +7,6 @@ const mediaScreen = () => {
 	box.style.height = '140px';
 }
 */
-function size(phone) {
-  let imgsize = document.getElementsByClassName('.imgsize')
-  let box = document.querySelector('.box')
-  if (phone.matches) {
-	imgsize.style.height = '120px';
-	box.style.height = '140px';
-  } else {
-	imgsize.style.height = '165px';
-	box.style.height = '200px';
-  }
-}
-var phone = window.matchMedia("(max-width: 600px)")
-size(phone);
-phone.addEventListener("change", function() {
-  size(phone);
-});
 
 $(window).scroll(function(){
     $(".bgbot").css("top", Math.max(0, 391 - $(this).scrollTop()));
