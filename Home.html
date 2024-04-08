@@ -1,0 +1,336 @@
+<html style="font-family: Roboto, Arial, sans-serif;">
+<body class="bgcolor">
+<link href="Home.css" rel="stylesheet">
+<link href="lite-yt-embed.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+<div class="topnav">
+  <button type="button" class="navbtn"><svg class="spinIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect opacity="0.9" fill="#ffffff" x="4" y="5" width="16" height="3" rx="1.5"/>
+        <path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="#ffffff" opacity="0.9"/>
+    </g>
+</svg></button>
+  <button type="button" class="navbtn1"><svg class="spinOut" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect opacity="0.9" fill="#ffffff" x="4" y="5" width="16" height="3" rx="1.5"/>
+        <path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="#ffffff" opacity="0.9"/>
+    </g>
+</svg></button>
+  <div class="hid">
+    <a class="active" href="Home.html" id="home"><h4>Home</h4></a>
+    <a href="#artists" id="artists"><h4>Artists</h4></a>
+    <a href="About/About.html" id="about"><h4>About</h4></a>
+    <a href="Contact/Contact.html" id="contact"><h4>Contact</h4></a>
+  </div>
+  <input id="searchbar" type="text" name="search" onkeyup="search()" placeholder="Search NCS Artists...">
+</div>
+<div class="bg"></div>
+<div class="bgblur"></div>
+<iframe class="bgvid" id="ytplayer" src="https://www.youtube.com/embed/Hse_HTX6KGs?autoplay=1&controls=0&playlist=Hse_HTX6KGs&loop=1&showinfo=0&autohide=1&rel=0&mute=1" allow="autoplay" frameborder="0" height="768" width="170%"></iframe>
+<div class="bgbot"></div>
+<div class="homeRow">
+  <h1 class="homePad">STREAM NCS<h1>
+  <h2 class="homePad1">
+    Browse All of Your<br>
+    Favorite NCS Music,<br>
+    All here in StreamNCS!
+  </h2>
+  <button type="button" class="hidbtn"></button>
+  <h3 class="homeShare">Share To Your Friends!</h3>
+</div>
+<ul id='listPlaylist'>
+<li class="searchRow">
+<div class="row" id="marginRow">
+  <a target="_blank" href="https://www.youtube.com/playlist?list=PLRBp0Fe2GpgmbQ3koOAUSpskVljcfD33Z" rel="noopener noreferrer">
+    <h2 class="plytitle">NCS: The Best of 2024 ❤️‍🔥</h2>
+  </a>
+  <a class="btns">
+    <button type="button" class="back" data-con="con" data-scroll="1321">&#8249</button>
+    <button type="button" class="next" data-con="con" data-scroll="1321">&#8250</button>
+  </a>
+  <div class="container" id="con">
+    <center>
+      <div class="box">
+        <lite-youtube class="imgsize" videoid="qjElWBGZou4" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=qjElWBGZou4" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Dosi & Aisake - Cruising | Lofi</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="SzEz2hO7Pw8" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=SzEz2hO7Pw8" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Max Brhon - AI | Midtempo Bass</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="TMPvMbXK77M" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=TMPvMbXK77M" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Low Mileage - I'm Not Ready | Garage</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="WNPBTrhGzXU" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=WNPBTrhGzXU" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>ROY KNOX & LINKER - Fell For A Demon | Melodic Dubstep</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="49eAj0gXSEk" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=49eAj0gXSEk" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Ripple - On Your Mind | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="jGf-9LAzfY4" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=jGf-9LAzfY4" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>JINXSPR0 - Stick Around You | Indie Dance</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="sBxZR8Gaeos" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=sBxZR8Gaeos" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Ariadne - Karma | Electronic Pop</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="n4EOjUhZjss" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=n4EOjUhZjss" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Andrah - pretty afternoon | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="HipT91U3ujA" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=HipT91U3ujA" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Zeli - Only The Fallen | Techno</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="DdPD6Y2y-_Y" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=DdPD6Y2y-_Y" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Natty Lou - Galactic (feat. Sebotage) | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="C20zBKGY6BM" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=C20zBKGY6BM" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Rameses B - UFO | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="CEr0tHVXpiY" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=CEr0tHVXpiY" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Raul Ojamaa, Malou, Soundy - Got a Feeling (feat. Malou, NOËP) | Garage</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="ZmffvCIAGTY" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=ZmffvCIAGTY" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>3rd Prototype - Move Your Body | Techno</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="ihPTNp7370s" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=ihPTNp7370s" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>sumu - apart | Lo-Fi Hip Hop</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="IGkW7l-0ptE" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=IGkW7l-0ptE" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Shiah Maisel & Clarx - Left With Nothing | Electronic Rock</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="S8O1pvp-gWw" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=S8O1pvp-gWw" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>T & Sugah x Primate - Set Me Free | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="zNGqtG4tjzQ" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=zNGqtG4tjzQ" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>SadBois & Manno - Romeo and Juliet | Electronic Rock</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="cYQgf2vuraY" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=cYQgf2vuraY" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>TRINIST - BROKEN | Breaks</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="9kXpmP6vA4U" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=9kXpmP6vA4U" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Diamond Eyes - Sinner | Garage</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="Gwi3zd7KnAo" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=Gwi3zd7KnAo" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Tomatow & SagaB & Adam Putra - Throne | Mid Tempo</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="mmr6MVhycws" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=mmr6MVhycws" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Jonth - Bass Face | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="DFyIA76BvD0" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=DFyIA76BvD0" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>ROY KNOX - Memory Box | Dubstep</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="7Mxzk_IlE-c" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=7Mxzk_IlE-c" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Blooom - Alone (feat. SGAR) | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="XKVuoNGcS24" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=XKVuoNGcS24" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Crushed Candy - Oh My Gawd | Trap</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="42N-FeSAql4" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=42N-FeSAql4" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Naeleck - Burning Wish (feat. Roniit) | Slap House</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="CZmAZa2e1D4" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=CZmAZa2e1D4" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>TWISTED - BUSSIN' | Brazilian Phonk</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="nABAzVR2txM" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=nABAzVR2txM" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>CiDE & Vide - Late At Night (feat. Jordan Grace) [Arcade Release]</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="Fsc3eCv3Rts" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=Fsc3eCv3Rts" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Maze - The Rocks | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="lXGvNdV02aQ" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=lXGvNdV02aQ" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Rameses B - Keep You | Phonk</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="yX-mmvu9J7U" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=yX-mmvu9J7U" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>MANIA, Tom Wigley & Lottie Jones - Calling Out Your Name | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="vFQ1EcdTdrI" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=vFQ1EcdTdrI" rel="noopener noreferrer">
+          <h3 class="title" id="marquee" id="marquee" id="marquee"><span>Itro - Never Let You Down | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="fUcaF6jNo9w" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=fUcaF6jNo9w" rel="noopener noreferrer">
+          <h3 class="title" id="marquee" id="marquee"><span>Clarx & Shiah Maisel - Pull Me In (feat. M.I.M.E) | Alternative Dance</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="7CpPGR6HOL0" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=7CpPGR6HOL0" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>yanvince - midnight feelings | Dance Pop</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="eVllrleo9Uc" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=eVllrleo9Uc" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Wiguez, Alltair, Josh Levoid - Moon Farewell (Ft. P-One) | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="ymHZIhsDuH0" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=ymHZIhsDuH0" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Lost Sky x ANGELPLAYA x Chris Linton - Unbreakable | Midtempo Bass</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="Huhp23Imxtk" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=Huhp23Imxtk" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>NGO - Don't Stay | Dance Pop</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="PiSjnSmSVF8" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=PiSjnSmSVF8" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Avi Snow, Sync, Marky Style - Alright | Indie Dance</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="OgSVYkDuHj4" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=OgSVYkDuHj4" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Diamond Eyes - Lies | Future Trap</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="QUsg4kgvwBo" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=QUsg4kgvwBo" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>More Plastic & Halvorsen - Sunrise | DnB</span></h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="6PLWDsSZ_UE" params="controls=1"></lite-youtube>
+		<a target="_blank" href="https://www.youtube.com/watch?v=6PLWDsSZ_UE" rel="noopener noreferrer">
+          <h3 class="title" id="marquee"><span>Jonth - WHAT | Jump Up DnB</span></h3>
+		</a>
+      </div>
+    </center>
+  </div>
+</div>
+</li><li class="searchRow">
+<div class="row" id="marginRow">
+  <a target="_blank" href="" rel="noopener noreferrer">
+    <h2 class="plytitle">Playlist Title</h2>
+  </a>
+  <a class="btns">
+    <button type="button" class="back" data-con="con1" data-scroll="1321">&#8249</button>
+    <button type="button" class="next" data-con="con1" data-scroll="1321">&#8250</button>
+  </a>
+  <div class="container" id="con1">
+    <center>
+      <div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div><div class="box">
+        <lite-youtube class="imgsize" videoid="" params="controls=1"></lite-youtube>
+		<a target="_blank" href="" rel="noopener noreferrer">
+          <h3 class="title">Title</h3>
+		</a>
+      </div>
+    </center>
+  </div>
+</div>
+</li>
+</ul>
+<div class="shareBox">
+  <button type="button" class="closebtn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="3 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#ffffff">
+        <rect x="0" y="7" width="16" height="2" rx="1"/>
+        <rect transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="7" width="16" height="2" rx="1"/>
+      </g>
+    </g>
+  </svg></button>
+  <textarea class="textBox" id="shareText" readonly>
+STREAM NCS:
+Browse All of Your Favorite NCS
+Music, All here in StreamNCS!
+https://streamncs.com</textarea>
+  <button type="button" class="copybtn" value="Copy"><h4 class="copyText">COPY</h4></button>
+</div>
+<script type="text/javascript" src="Home.js"></script>
+<script type="text/javascript" src="lite-yt-embed.js"></script>
+</body>
+</html>
