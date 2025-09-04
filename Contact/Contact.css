@@ -1,0 +1,394 @@
+body {
+  overflow-x: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #101010;
+  margin-left: -8px;
+  margin-top: -7px;
+  width: 101.1%;
+  transition: background-color .7s ease-in-out;
+  animation: fadeIn .25s;
+  position: fixed;
+  top: 7px;
+  z-index: 7;
+}
+.topnav:hover {
+  background-color: #131313;
+  transition: background-color .7s ease-in-out;
+}
+.navbtn {
+  display: block;
+  background-color: #101010;
+  padding: 0px 14px;
+  border: 0px;
+  height: 65px;
+  float: left;
+  transition: background-color .7s ease-in-out;
+  position: relative;
+  z-index: 5;
+}
+.navbtn1 {
+  display: none;
+  background-color: #101010;
+  padding: 0px 14px;
+  border: 0px;
+  height: 65px;
+  float: left;
+  transition: background-color .7s ease-in-out;
+  position: relative;
+  z-index: 6;
+}
+.spinIn {
+  transform: rotate(0deg);
+  transition: transform .5s ease-in-out;
+}
+.spinOut {
+  transform: rotate(-180deg);
+  transition: transform .5s ease-in-out, margin-top .5s ease-in-out;
+  margin-top: -4px;
+}
+.topnav button:hover {
+  background-color: #151515;
+  transition: background-color .7s ease-in-out;
+}
+#home {
+  position: relative;
+  z-index: 4;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+#artists {
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+#about {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+#contact {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color .7s ease-in-out;
+}
+.hid {
+  display: block;
+}
+.bgcolor {
+ background-color: #151515;
+}
+.sharebtn {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #232323;
+  display: block;
+  z-index: 5;
+  border: 0px;
+  position: fixed;
+  right: 20;
+  bottom: 20;
+  transition: background-color .7s ease-in-out, opacity.7s ease-in-out;
+}
+.sharebtn:hover {
+  background-color: #505050;
+  transition: background-color .7s ease-in-out, opacity.7s ease-in-out;
+}
+.shareBox {
+    display: none;
+    margin-top: auto;
+	margin-bottom: auto;
+    width: 450px;
+    height: 212px;
+    background-color: #202020;
+    border-radius: 13px;
+	position: fixed;
+	top: 125;
+	right: 22;
+	z-index: 7;
+	transition: background-color .5s ease-in-out, transform .7s ease-in-out, opacity .7s ease-in-out;
+}
+.textBox {
+	display: block;
+    margin-top: 46px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+    width: 420px;
+    height: 120px;
+    background-color: #131313;
+    border-radius: 10px;
+	z-index: 7;
+	border: 0;
+	transition: background-color .5s ease-in-out;
+	text-align: left;
+	word-spacing: 7px;
+	font-size: 20px;
+	color: white;
+	padding-left: 25px;
+	padding-top: 14px;
+	overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-height: none;
+	text-align: left;
+	resize: none;
+	white-space: pre;
+}
+.textBox:hover {
+	background-color: #171717;
+	transition: background-color .5s ease-in-out;
+}
+.copybtn {
+	display: block;
+	position: absolute;
+	right: 15px;
+    margin-top: 8px;
+	border: 0px;
+    width: 60px;
+    height: 30px;
+    background-color: #171717;
+    border-radius: 8px;
+	z-index: 7;
+	transition: background-color .5s ease-in-out;
+}
+.copybtn:hover {
+	background-color: #202020;
+	transition: background-color .5s ease-in-out;
+}
+.copyText {
+  color: white;
+  position: absolute;
+  margin-top: -7px;
+  margin-left: 5px;
+}
+.closebtn {
+	display: block;
+	position: absolute;
+	right: 15px;
+    margin-top: 8px;
+	border: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #171717;
+    border-radius: 8px;
+	z-index: 7;
+	transition: background-color .5s ease-in-out;
+}
+.closebtn:hover {
+	background-color: #202020;
+	transition: background-color .5s ease-in-out;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #202020;
+  color: white;
+  transition: background-color .7s ease-in-out;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #303030;
+  color: white;
+}
+.topnav a.active:hover {
+  background-color: #404040;
+  transition: background-color .7s ease-in-out;
+}
+li {
+  margin-bottom: -23.5%;
+  margin-left: -7px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+ 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 600px) {
+  .topnav {
+	height: 19.5%;
+  }
+  .topnav a {
+	padding: 0px 4.7%;
+	margin-bottom: 12px;
+	height: 60px;
+  }
+}
+
+/* For PC */
+.bg {
+    position: absolute;
+    top: 0;
+    width: 101.1%;
+    height: 92px;
+    z-index: 2;
+    background-color: #151515;
+    margin-left: -8px;
+    margin-top: -7px;
+}
+.bgvid {
+    position: fixed;
+    left: -34.5%;
+    top: 0px;
+    overflow-x: hidden;
+  	white-space: nowrap;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	z-index: 1;
+	animation: fadeIn 1.1s;
+}
+.bgblur {
+	position: fixed;
+    top: 0px;
+	background-color: #101010;
+	opacity: .5;
+	width: 101.1%;
+	height: 1382px;
+	position: absolute;
+	z-index: 2;
+	margin-left: -8px;
+	animation: fadeIn 1.1s;
+}
+.row {
+	width: 101.1%;
+	height: 1290px;
+	margin-left: -7px;
+	animation: fadeIn 1.1s;
+	position: absolute;
+	top: 92px;
+	z-index: 3;
+}
+.donateBox {
+	display: block;
+    margin-top: auto;
+	margin-bottom: auto;
+    width: 500px;
+    height: 400px;
+    background-color: #232323;
+    border-radius: 20px;
+	animation-delay: 2.5;
+	animation: fadeIn 5.5s;
+	transition: background-color .7s ease-in-out;
+}
+.donateBox:hover {
+	background-color: #282828;
+	transition: background-color .7s ease-in-out;
+}
+.img {
+	height: 130px;
+	width: 130px;
+	float: left;
+	margin-top: 70px;
+	margin-left: 70px;
+	border-radius: 65px;
+}
+.name {
+	font-size: 30px;
+	color: white;
+	float: right;
+	margin-top: 95px;
+	margin-right: 70px;
+}
+.nameinfo {
+	font-size: 12px;
+	color: white;
+	float: right;
+	margin-top: -23px;
+	margin-right: 113px;
+	text-align: left;
+	word-spacing: 12px;
+	font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nameinfo1 {
+	font-size: 12px;
+	color: white;
+	float: right;
+	margin-top: -10px;
+	margin-right: 214px;
+	text-align: left;
+}
+.contactPad {
+	color: white;
+	font-size: 90px;
+	margin-top: 50px;
+	animation-delay: 2.5s;
+	animation: fadeIn 2s;
+	font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	margin-bottom: -15px;
+}
+.contactPad1 {
+    padding: 5px;
+	color: white;
+	font-size: 25px;
+	animation-delay: 2.5s;
+	animation: fadeIn 3s;
+}
+.contactPad2 {
+    padding: 5px;
+	color: white;
+	font-size: 20px;
+	animation-delay: 2.5s;
+	animation: fadeIn 5.5s;
+}
+.contactPad3 {
+	color: white;
+	font-size: 25px;
+	margin-bottom: 3px;
+	animation-delay: 2.5s;
+	animation: fadeIn 4s;
+}
+.bg1 {
+    position: absolute;
+    width: 101.1%;
+    height: 150px;
+    z-index: 2;
+    background-color: #151515;
+    margin-left: -8px;
+	position: absolute;
+	z-index: 3;
+	left: -8px;
+	bottom: -763;
+}
+.bottomnav {
+	background-color: #101010;
+	width: 101.1%;
+	height: 130px;
+	position: absolute;
+	z-index: 4;
+	left: -8px;
+	bottom: -763;
+	animation: fadeIn 1.1s;
+	transition: background-color .7s ease-in-out;
+}
+.bottomnav:hover {
+	background-color: #121212;
+	transition: background-color .7s ease-in-out;
+}

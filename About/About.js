@@ -1,17 +1,3 @@
-/*
-const mediaScreen = () => {
-  var imgsize = document.querySelector('.imgsize')
-  var box = document.querySelector('.box')
-  window.innerWidth < 450
-    imgsize.style.height = '120px';
-	box.style.height = '140px';
-}
-*/
-
-$(window).scroll(function(){
-    $(".bgbot").css("top", Math.max(0, 391 - $(this).scrollTop()));
-});
-
 var hid = document.querySelector('.hid');
 var navbtn = document.querySelector('.navbtn');
 var navbtn1 = document.querySelector('.navbtn1');
@@ -109,11 +95,11 @@ navbtn1.addEventListener('click', () => {
 })
 
 var closebtn = document.querySelector('.closebtn');
-var hidbtn = document.querySelector('.hidbtn');
+var sharebtn = document.querySelector('.sharebtn');
 var sharebox = document.querySelector('.shareBox');
 
-hidbtn.addEventListener('click', () => {
-  let fps = setTimeout(hidbtn.onclick = function () {
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
 	var transform = "translateX(20px)";
 	var opacity = "0";
 	var display = "block";
@@ -123,46 +109,44 @@ hidbtn.addEventListener('click', () => {
 	Object.assign(closebtn.style, {display});
   }, 1)
 })
-hidbtn.addEventListener('click', () => {
-  let fps = setTimeout(hidbtn.onclick = function () {
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
+	var opacity = "1";
+	var display = "none";
+	Object.assign(sharebtn.style, {opacity});
+	Object.assign(sharebtn.style, {display});
+  }, 1)
+})
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
+	var display = "block";
+	Object.assign(sharebtn.style, {display});
+  }, 2)
+})
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
+	var opacity = "0";
+	Object.assign(sharebtn.style, {opacity});
+  }, 250)
+})
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
 	var transform = "translateX(0px)";
 	var opacity = "1";
+	Object.assign(sharebox.style, {transform});
+	Object.assign(sharebox.style, {opacity});
+  }, 250)
+})
+sharebtn.addEventListener('click', () => {
+  let fps = setTimeout(sharebtn.onclick = function () {
+	var opacity = "1"
+	var transform = "translateX(0px)";
 	var display = "none";
 	Object.assign(sharebox.style, {transform});
 	Object.assign(sharebox.style, {opacity});
-	Object.assign(hidbtn.style, {display});
-  }, 250)
-})
-hidbtn.addEventListener('click', () => {
-  let fps = setTimeout(hidbtn.onclick = function () {
-	var opacity = "1";
-	var transform = "translateX(0px)";
-	Object.assign(sharebox.style, {transform});
-	Object.assign(sharebox.style, {opacity});
+	Object.assign(sharebtn.style, {display});
   }, 900)
 })
-
-/*
-hidbtn.onclick = function () {
-  var display = "block";
-  Object.assign(sharebox.style, {display});
-  Object.assign(closebtn.style, {display});
-};
-*/
-/*
-var closeShare = true;
-
-function closeShare() {
-  let closeShare = document.querySelector('.closebtn')
-  if (closeShare == true) {
-    sharebox.style.animation = "shareSlideFadeIn 1s forwards";
-	closeShare = false;
-  } else if (closeShare == false) {
-	sharebox.style.animation = "shareSlideFadeOut 1s";
-	closeShare = true;
-  }
-}
-*/
 
 closebtn.addEventListener('click', () => {
   let fps = setTimeout(closebtn.onclick = function () {
@@ -184,11 +168,17 @@ closebtn.addEventListener('click', () => {
   let fps = setTimeout(closebtn.onclick = function () {
 	var transform = "translateX(20px)";
 	var opacity = "0";
-	var display = "block";
 	Object.assign(sharebox.style, {transform});
 	Object.assign(sharebox.style, {opacity});
-	Object.assign(hidbtn.style, {display});
   }, 250)
+})
+closebtn.addEventListener('click', () => {
+  let fps = setTimeout(closebtn.onclick = function () {
+	var display = "block";
+	var opacity = "0";
+	Object.assign(sharebtn.style, {opacity});
+	Object.assign(sharebtn.style, {display});
+  }, 700)
 })
 closebtn.addEventListener('click', () => {
   let fps = setTimeout(closebtn.onclick = function () {
@@ -199,6 +189,7 @@ closebtn.addEventListener('click', () => {
 	Object.assign(sharebox.style, {transform});
 	Object.assign(sharebox.style, {opacity});
 	Object.assign(closebtn.style, {display});
+	Object.assign(sharebtn.style, {opacity});
   }, 900)
 })
 
@@ -206,71 +197,7 @@ var copybtn = document.querySelector('.copybtn')
 var input = document.getElementById('shareText')
 
 copybtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  input.select();
-  document.execCommand("copy");
+	event.preventDefault();
+	input.select();
+	document.execCommand("copy");
 })
-
-const nextbtns = document.querySelectorAll('.next')
-const backbtns = document.querySelectorAll('.back')
-var wid = window.screen.width
-
-for (let nxt of nextbtns) {
-	nxt.addEventListener("click", () => {
-	  const con = nxt.getAttribute("data-con");
-	  const target = nxt.getAttribute("data-scroll");
-	  document.querySelector(`#${con}`).scrollLeft += parseInt(target, 10)
-	});
-}
-
-for (let bck of backbtns) {
-	bck.addEventListener("click", () => {
-	  const con = bck.getAttribute("data-con");
-	  const target = bck.getAttribute("data-scroll");
-	  document.querySelector(`#${con}`).scrollLeft -= parseInt(target, 10);
-	});
-}
-
-function search() {
-  let input = document.getElementById('searchbar').value
-  input = input.toLowerCase();
-  let x = document.getElementsByClassName('searchRow');
-  let h = document.querySelector('.homerow');
-  let blr = document.querySelector('.bgblur');
-  let vid = document.querySelector('.bgvid');
- 
-  for (i = 0; i < x.length; i++) {
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.opacity = "0";
-	  x[i].style.transform = "translateY(-10px)";
-    }
-    else {
-      x[i].style.opacity = ".2";
-	  x[i].style.transform = "translateY(-20px)";
-	  h.style.transform = "translateY(-10px)";
-	  h.style.opacity = ".2";
-	  blr.style.transform = "translateY(-10px)";
-	  blr.style.opacity = ".2";
-	  vid.style.transform = "translateY(-10px)";
-	  vid.style.opacity = ".2";
-    }
-  }
-  let fps = setTimeout(() => {
-    for (i = 0; i < x.length; i++) {
-      if (!x[i].innerHTML.toLowerCase().includes(input)) {
-        x[i].style.display = "none";
-      }
-      else {
-		x[i].style.opacity = "1";
-        x[i].style.display = "list-item";
-		x[i].style.transform = "translateY(0)";
-		h.style.transform = "translateY(0px)";
-		h.style.opacity = "1";
-		blr.style.transform = "translateY(0px)";
-	    blr.style.opacity = ".5";
-	    vid.style.transform = "translateY(0px)";
-	    vid.style.opacity = "1";
-     }
-    }
-  }, 500)
-}
