@@ -287,8 +287,8 @@ li {
 }
 .bgvid {
     position: fixed;
-    left: -34.5%;
-    top: -384px;
+    left: -68%;
+    top: -10px;
     overflow-x: hidden;
   	white-space: nowrap;
 	-ms-overflow-style: none;
