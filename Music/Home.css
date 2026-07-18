@@ -64,7 +64,7 @@ body {
   opacity: 0;
   transition: all .5s ease-in-out;
 }
-#music {
+#artists {
   position: relative;
   z-index: 3;
   opacity: 0;
@@ -97,7 +97,7 @@ body {
   display: none;
 }
 .bgcolor {
- background-color: #ffffff;
+ background-color: #151515;
 }
 
 /* Change the color of links on hover */
@@ -287,7 +287,7 @@ li {
 }
 .bgvid {
     position: fixed;
-    left: -50%;
+    left: -58%;
     top: -420px;
     overflow-x: hidden;
   	white-space: nowrap;
@@ -321,7 +321,7 @@ li {
 }
 .homePad {
 	text-align: left;
-    padding-top: 27px;
+    margin-top: -7px;
 	padding-left: 47px;
 	color: white;
 	font-size: 90px;
@@ -342,6 +342,18 @@ li {
 	font-style: bold;
 	word-spacing: 8px;
 	animation-delay: 4s;
+	animation: slideFadeIn 4s;
+}
+.homePad2 {
+	text-align: right;
+    padding: 5px;
+	padding-right: 25px;
+	margin-top: 80px;
+	color: white;
+	font-size: 13px;
+	font-style: bold;
+	word-spacing: 2px;
+	animation-delay: 6s;
 	animation: slideFadeIn 4s;
 }
 .homeShare {
