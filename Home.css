@@ -344,6 +344,18 @@ li {
 	animation-delay: 4s;
 	animation: slideFadeIn 4s;
 }
+.homePad2 {
+	text-align: right;
+    padding: 5px;
+	padding-right: 50px;
+	margin-top: -70px;
+	color: white;
+	font-size: 13px;
+	font-style: bold;
+	word-spacing: 2px;
+	animation-delay: 6s;
+	animation: slideFadeIn 4s;
+}
 .homeShare {
 	position: absolute;
 	right: 25px;
