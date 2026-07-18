@@ -321,7 +321,7 @@ li {
 }
 .homePad {
 	text-align: left;
-    padding-top: -110px;
+    margin-top: -140px;
 	padding-left: 47px;
 	color: white;
 	font-size: 90px;
@@ -336,7 +336,7 @@ li {
 	text-align: left;
     padding: 5px;
 	padding-left: 50px;
-	margin-top: -120px;
+	margin-top: -70px;
 	color: white;
 	font-size: 37px;
 	font-style: bold;
