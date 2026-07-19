@@ -298,8 +298,7 @@ li {
 	transition: opacity .7s ease-in-out, transform .7s ease-in-out;
 }
 .bgblur {
-	background-color: #101010;
-	opacity: .5;
+	background: rgba(0, 0, 0, 0.5);
 	width: 102%;
 	height: 351px;
 	position: absolute;
