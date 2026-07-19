@@ -262,7 +262,6 @@ li {
 	animation: fadeIn 1.1s;
 }
 .bgblur {
-	position: fixed;
     top: 0px;
 	background-color: #101010;
 	opacity: .5;
