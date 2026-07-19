@@ -332,6 +332,19 @@ li {
     font-weight: 400;
     font-style: normal;
 }
+@keyframes textColor {
+    0% { opacity: 30%; }
+	20% { opacity: 10%; }
+	40% { opacity: 100%; }
+	60% { opacity: 10%; }
+	80% { opacity: 100%; }
+	85% { opacity: 10%; }
+	90% { opacity: 30%; }
+	100% { opacity: 100%; }
+}
+.homePad:hover {
+	animation: textColor 2s, fadeIn 0s;
+}
 .homePad1 {
 	text-align: left;
     padding: 5px;
