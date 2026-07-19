@@ -439,17 +439,18 @@ li {
 	text-align: right;
 	color: white;
 	padding-bottom: -70px;
-	margin-top: -35px;
+	margin-top: -85px;
 	font-size: 15px;
 	font-style: bold;
 	animation-delay: 5s;
 	animation: shareSlideFadeIn 4s;
+	position: relative;
 }
 .hidbtn {
 	display: block;
 	position: absolute;
 	right: 15px;
-	margin-top: -35px;
+	margin-top: -85px;
 	border: 0px;
     width: 180px;
     height: 35px;
