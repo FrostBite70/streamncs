@@ -479,13 +479,14 @@ li {
 
 .imgsize {
 	position: relative;
-	width: 95.5%;
+	width: 97.5%;
 	height: 160px;
 	border-radius: 20px;
 	display: inline-block;
 	float: none;
 	z-index: 3;
 	margin-top: 5px;
+	margin-bottom: 7px;
 }
 .box {
     margin-top: 50px;
@@ -542,8 +543,8 @@ li {
 .title {
   color: white;
   position: absolute;
-  bottom: -7px;
-  left: 16px;
+  bottom: -10px;
+  left: 20px;
   font-size: 15px;
   text-align: left;
 }
