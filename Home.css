@@ -321,16 +321,18 @@ li {
 }
 .homePad {
 	text-align: left;
-    padding-top: 27px;
+    padding-top: 30px;
 	padding-left: 47px;
 	color: white;
-	font-size: 90px;
+	font-size: 120px;
 	font-style: bold;
 	animation-delay: 2s;
 	animation: slideFadeIn 2s;
 	font-family: "Do Hyeon", sans-serif;
     font-weight: 400;
     font-style: normal;
+	position: relative;
+	z-index: 3;
 }
 @keyframes textColor {
     0% { opacity: 30%; }
@@ -343,19 +345,93 @@ li {
 	100% { opacity: 100%; }
 }
 .homePad:hover {
-	animation: textColor 2s, fadeIn 0s;
+	animation: textColor 2s, fadeIn 0s, slideFadeIn 0s;
+}
+#effect {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 1px;
+  padding-left: 37px;
+  color: white;
+  font-size: 120px;
+  font-style: bold;
+  cursor: pointer;
+  user-select: none;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+.effect-active {
+  animation: effect-shake 0.25s cubic-bezier(.25, .46, .45, .94) both, fadeIn 0s, slideFadeIn 0s, textColor .7s linear infinite;
+}
+#effect.effect-active::before,
+#effect.effect-active::after {
+  content: 'WASD CLICK';
+  position: absolute;
+  padding-top: 1px;
+  padding-left: 37px;
+  font-size: 120px;
+  font-style: bold;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+#effect.effect-active::before {
+  color: #ff0055;
+  left: -4px;
+  text-shadow: -2px 0 #ff0055;
+  animation: effect-slice-red 0.25s linear infinite;
+}
+#effect.effect-active::after {
+  color: #00ffff;
+  left: 4px;
+  text-shadow: 2px 0 #00ffff;
+  animation: effect-slice-cyan 0.25s linear infinite;
+}
+@keyframes effect-shake {
+  0% { transform: translate(0) skew(0deg); opacity: 1; }
+  10% { transform: translate(-8px, 4px) skew(-10deg); opacity: 0.8; }
+  15% { transform: translate(6px, -4px) skew(15deg) scaleY(1.1); opacity: 0.4; }
+  23% { transform: translate(0) skew(0deg); opacity: 1; }
+  45% { transform: translate(10px, 8px) skew(-20deg) scaleY(0.9); opacity: 0.3; }
+  50% { transform: translate(-12px, -6px) skew(25deg); opacity: 0.9; }
+  68% { transform: translate(0) skew(0deg); opacity: 1; }
+  75% { transform: translate(-4px, 5px) skew(-5deg); opacity: 0.5; }
+  85% { transform: translate(8px, -8px) skew(8deg) scaleX(1.2); opacity: 0.2; }
+  92% { transform: translate(-2px, 2px) skew(-3deg); opacity: 0.9; }
+  100% { transform: translate(0) skew(0deg); opacity: 1; }
+}
+@keyframes effect-slice-red {
+  0%   { clip-path: polygon(0 5%, 100% 5%, 100% 8%, 0 8%); }
+  15%  { clip-path: polygon(0 40%, 100% 40%, 100% 42%, 0 42%); }
+  30%  { clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%); }
+  45%  { clip-path: polygon(0 80%, 100% 80%, 100% 88%, 0 88%); }
+  60%  { clip-path: polygon(0 50%, 100% 50%, 100% 52%, 0 52%); }
+  75%  { clip-path: polygon(0 70%, 100% 70%, 100% 73%, 0 73%); }
+  90%  { clip-path: polygon(0 25%, 100% 25%, 100% 35%, 0 35%); }
+  100% { clip-path: polygon(0 90%, 100% 90%, 100% 95%, 0 95%); }
+}
+@keyframes effect-slice-cyan {
+  0%   { clip-path: polygon(0 30%, 100% 30%, 100% 32%, 0 32%); }
+  20%  { clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%); }
+  40%  { clip-path: polygon(0 5%, 100% 5%, 100% 12%, 0 12%); }
+  55%  { clip-path: polygon(0 60%, 100% 60%, 100% 62%, 0 62%); }
+  70%  { clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%); }
+  85%  { clip-path: polygon(0 20%, 100% 20%, 100% 23%, 0 23%); }
+  100% { clip-path: polygon(0 85%, 100% 85%, 100% 88%, 0 88%); }
 }
 .homePad1 {
 	text-align: left;
-    padding: 5px;
+    top: -45px;
 	padding-left: 50px;
-	margin-top: -70px;
+	margin-top: -35px;
 	color: white;
 	font-size: 37px;
 	font-style: bold;
 	word-spacing: 8px;
 	animation-delay: 4s;
 	animation: slideFadeIn 4s;
+	position: relative;
+	z-index: 3;
 }
 .homeShare {
 	position: absolute;

@@ -274,3 +274,10 @@ function search() {
     }
   }, 500)
 }
+function activeEffect(element) {
+  element.classList.add('effect-active');
+  
+  setTimeout(() => {
+    element.classList.remove('effect-active');
+  }, 1100); 
+}
