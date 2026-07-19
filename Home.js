@@ -153,7 +153,7 @@ for (let nxt of nextbtns) {
         const styles = window.getComputedStyle(sampleBox);
         const marginRight = parseFloat(styles.marginRight) || 0;
         const marginLeft = parseFloat(styles.marginLeft) || 0;
-        
+
         const dynamicStep = (boxWidth + marginRight + marginLeft) * 4;
         container.scrollLeft += dynamicStep;
       } else {
@@ -186,7 +186,6 @@ for (let bck of backbtns) {
     }
   });
 }
-
 
 function search() {
   let searchbar = document.getElementById('searchbar');
