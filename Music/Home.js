@@ -17,7 +17,7 @@ var navbtn = document.querySelector('.navbtn');
 var navbtn1 = document.querySelector('.navbtn1');
 
 let home = document.getElementById('home');
-let music = document.getElementById('music');
+let artists = document.getElementById('artists');
 let about = document.getElementById('about');
 let contact = document.getElementById('contact');
 
@@ -34,7 +34,7 @@ navbtn.addEventListener('click', () => {
   }, 100);
 
   setTimeout(() => {
-    if (music) { music.style.padding = '0px 15px'; music.style.opacity = '0'; }
+    if (artists) { artists.style.padding = '0px 15px'; artists.style.opacity = '0'; }
     if (navbtn) navbtn.style.backgroundColor = '#323232';
   }, 200);
 
@@ -67,7 +67,7 @@ navbtn1.addEventListener('click', () => {
   }, 100);
 
   setTimeout(() => {
-    if (music) { music.style.padding = '0px 50px'; music.style.opacity = '1'; }
+    if (artists) { artists.style.padding = '0px 50px'; artists.style.opacity = '1'; }
   }, 200);
 
   setTimeout(() => {
